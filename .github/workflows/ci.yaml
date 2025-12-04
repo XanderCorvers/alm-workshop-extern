@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - "**"
+  # TRIGGER ON GITHUB RELEASES FOR SEMANTIC VERSIONING
+  release:
+    types:
+      - published
 
 env:
   CONTAINER_REPOSITORY: quay.io/xanderc # PUT YOUR OWN USERNAME HERE
